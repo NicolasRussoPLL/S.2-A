@@ -1,0 +1,101 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom,#000,#444);
+    background-repeat: no-repeat;
+    height: 160vh;
+}
+
+
+h1{
+    text-align: center;
+    color: rgb(216, 30, 6);
+}
+
+.NºSemana{
+    font-size: 1.5em;
+    border-bottom: 2px double rgb(106, 117, 6);
+    color: rgb(126, 14, 201);
+}
+
+h3 b{
+    font-size: 1.4em;
+    border-bottom: 2px double rgb(99, 10, 10);
+    color: rgb(12, 77, 151);
+}
+
+
+.semaneros{
+    font-size: 20px;
+    border: 2px solid black;
+    color: azure;
+    border-left: none;
+}
+
+.mes{
+    font-size: 20px;
+    border: 2px solid black;
+    color: azure;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+footer div{
+    color: azure;
+    width: 100%;
+}
+
+h2{
+    font-size: 30px;
+}
+
+li{
+    margin: 5px;
+    font-size: 18px;
+}
+
+
+.flex_container{
+    display: flex;
+    box-sizing: border-box;
+    border: 5px solid white;
+}
+
+.weeks_container{
+    width: 80%;
+    display: flex;
+}
+
+.week{
+    background-color: rgb(99, 10, 10);
+    width: 20%;
+    flex: 1;
+    text-align: center;
+    padding-top: 1.4em;
+}
+
+.month_container{
+    background-color: rgb(106, 117, 6);
+    text-align: center;
+    width: 20%;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 1460px){
+    .week:nth-child(n+3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .week:nth-child(n+2){
+        display: none;
+    }
+}
+
